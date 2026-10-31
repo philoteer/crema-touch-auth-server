@@ -129,28 +129,6 @@ button. Keep the terminal open. `ACTIVATION RESPONSE SENT` means a response was
 sent, **not proof that the reader accepted it**: check the device screen, open a
 local DRM-free book, then stop the AP and reboot with Wi-Fi off to verify success.
 
-### Retailer branding
-
-Choose the code matching the device's original retailer when known:
-
-| Code | Branding |
-| --- | --- |
-| `keph_yes24` | YES24; default and used in the reported successful activation |
-| `keph_aladin` | Aladin |
-| `keph_bandi` | Bandi & Luni's |
-| `offline` | Experimental generic value; downstream reader behavior is unverified |
-
-For example:
-
-```bash
-sudo python3 hotspot.py --shopcode keph_aladin --keep-logs
-```
-
-The retailer strings were found in firmware; not every combination is tested.
-They control launcher branding, not bookstore-account authentication. Do not
-enter real bookstore credentials. Factory reset erases a database-only
-activation; rerun the hotspot if that happens.
-
 ### Startup handling and options
 
 Startup waits for NetworkManager to release the selected device and for the
