@@ -1,3 +1,11 @@
+tl;dr (kr):
+
+- 인증 서버가 종료되어 정상 초기화가 불가능한 크레마 터치의 인증 절차 우회 코드 (Debian 13, hostapd 지원 무선랜카드 탑재 환경에서 테스트)
+- 디펜던시 설치 후 파이썬 코드를 실행하면 자동으로 가상 AP가 설정됨
+- 크레마 터치로 해당 AP에 접속하면 인증을 통과함
+
+This code has been implemented in assistance of LLM (GPT-6) on OpenCode. Caveat emptor.
+
 # Crema Touch offline activation hotspot
 
 Revive a **Crema Touch stuck at registration after a factory reset** when its
